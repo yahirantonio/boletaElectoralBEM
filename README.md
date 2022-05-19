@@ -1,6 +1,6 @@
-# Webpack Starter
+# Boleta Electoral
 
-Este es el proyecto inicial para crear aplicaciones utilizando webpack.
+Este proyecto sirve para ver mi forma de programar en la fecha de 19/05/2022
 
 ### Notas:
 Recuerden reconstruir los módulos de Node
