@@ -1,0 +1,63 @@
+{
+	"candidates": [
+		{
+			"candidate": "anaya",
+			"politicalParty": "pan",
+			"vote": false,
+			"coalicion":1
+		},
+		{
+			"candidate": "meade",
+			"politicalParty": "pri",
+			"vote": false,
+			"coalicion":2
+		},
+		{
+			"candidate": "anaya",
+			"politicalParty": "prd",
+			"vote": false,
+			"coalicion":1
+		},
+		{
+			"candidate": "meade",
+			"politicalParty": "verde",
+			"vote": false,
+			"coalicion":2
+		},
+		{
+			"candidate": "andres",
+			"politicalParty": "pt",
+			"vote": false,
+			"coalicion":3
+		},
+		{
+			"candidate": "anaya",
+			"politicalParty": "movimientoCiudadano",
+			"vote": false,
+			"coalicion":1
+		},
+		{
+			"candidate": "meade",
+			"politicalParty": "nuevaAlianza",
+			"vote": false,
+			"coalicion":2
+		},
+		{
+			"candidate": "andres",
+			"politicalParty": "morena",
+			"vote": false,
+			"coalicion":3
+		},
+		{
+			"candidate": "andres",
+			"politicalParty": "encuentroSocial",
+			"vote": false,
+			"coalicion":3
+		},
+		{
+			"candidate": "bronco",
+			"politicalParty": "independiente",
+			"vote": false
+		}
+	]
+}
