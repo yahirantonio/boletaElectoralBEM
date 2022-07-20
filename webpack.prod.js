@@ -1,3 +1,4 @@
+const path = require('path');
 const HtmlWebPackPlugin       = require('html-webpack-plugin'); 
 const MiniCssExtractPlugin    = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
@@ -15,6 +16,7 @@ module.exports = {
         minimizer: [ new OptimizeCssAssetsPlugin() ]
     },
     output: {
+        path: path.resolve(__dirname, 'docs'),
         filename: 'main.[contentHash].js'
     },
     module: {

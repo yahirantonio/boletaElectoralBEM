@@ -22,6 +22,7 @@ clickCard.forEach(value=>{
 
 voteButton.addEventListener('click',()=>{
     vote.checkVote(dataValues);
+    vote.showVotes(dataValues)
 })
 
 

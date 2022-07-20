@@ -12,9 +12,9 @@ export default class Card {
 
         let {candidates} = this.data; 
 
-        console.log(candidates)
-        // console.log(candidateName)
-        console.log(party)
+        // console.log(candidates)
+        // // console.log(candidateName)
+        // console.log(party)
 
         candidates.map( (value,index) => {
 
