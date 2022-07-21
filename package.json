@@ -4,9 +4,8 @@
   "description": "Este es un cascaron de un proyecto de webpack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.prod.js",
-    "build:dev": "webpack --config webpack.config.js",
+    "prod": "webpack --config webpack.prod.js",
+    "dev": "webpack --config webpack.config.js",
     "start": "webpack-dev-server --open --port=8080"
   },
   "author": "Fernando Herrera",

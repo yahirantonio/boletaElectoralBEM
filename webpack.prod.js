@@ -17,7 +17,8 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'docs'),
-        filename: 'main.[contentHash].js'
+        filename: 'main.[contentHash].js',
+        clean:true
     },
     module: {
         rules: [
@@ -58,16 +59,8 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|svg|jpg|gif|ico)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            esModule: false,
-                            name: 'assets/[name].[ext]'
-                        }
-                    }
-                ]
+                test: /\.(png|jpg|jpeg|gif)$/i,
+                type: "asset/resource",
             }
         ]
     },
@@ -77,7 +70,7 @@ module.exports = {
             filename: './index.html'
         }),
         new MiniCssExtractPlugin({
-            filename: '[name].[contentHash].css',
+            filename: './[name].[contentHash].css',
             ignoreOrder: false
         }),
         new MinifyPlugin(),
@@ -88,6 +81,5 @@ module.exports = {
             ]
         }),
     ]
-
 }
 
