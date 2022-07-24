@@ -9,7 +9,7 @@ body{
 
 .header{
 	width: 80%;
-	height: 100px;
+	height: auto;
 	background: #4d3730;
 	color: white;
 	border-radius: 0 0 15px 15px;
@@ -20,9 +20,9 @@ body{
 }
 
 .header__title{
-	margin: -10px;
+	margin: 0px;
 	padding: 0px;
-	font-size: xxx-large;
+	font-size: calc(4vw);
 }
 
 .header__subtitle{
@@ -31,23 +31,27 @@ body{
 }
 
 .header__subtitle--small{
-	font-size: 25px;
+	font-size: calc(2vw + 3px);
 }
 
 .header__subtitle--bigger{
-	font-size: 40px;
-	margin: -10px;
+	font-size: 3vw;
+	margin: 0px;
 	margin-bottom: 0px;
 }
 
 /*------------------Formulario de datos geoelectorales----------------------*/
+
+.quest__label {
+	font-size: 16px;
+}
 
 .quest {
 	display: grid;
 	grid-template-columns: 42% 35% 1fr;
 	grid-template-rows: 50% 50%;
 	row-gap: 10px;
-	height: 100px;
+	height: auto;
 	margin: 50px 30px;
 	font-weight: 600;
 }
@@ -162,12 +166,16 @@ body{
 .box-vote__button{
 	width: 80%;
 	border-radius: 20px;
-	background: red;
-	color: #efb810;
+	background: #9B441A;
+	color: #F0D37D;
 	border: 0px;
 	font-size: 80px;
 	cursor: pointer;
 	outline: none;
+}
+
+.box-vote__button:hover{
+	background: #116849;
 }
 
 /*-----------------1272px---------------------*/
@@ -191,14 +199,7 @@ body{
 		grid-template-columns: 30% 35% 1fr;
 		text-align: center;
 	}
-
-	.header__title{
-		font-size: 42px;
-	}
 	
-	.header__subtitle--small{
-		font-size: 35px;
-	}
 
 	.card__logo {
 		width: 130px;
@@ -211,41 +212,8 @@ body{
 	}
 }
 
-/*-----------------1065px---------------------*/
-
-@media (max-width: 1065px) {
-	.header__title{
-		font-size: 37px;
-		margin: 10px;
-	}
-	
-	.header__subtitle--bigger{
-		font-size: 32px;
-	}
-
-	.party-container{
-		font-weight: 500;
-	}
-}
-
 /*-----------------963px---------------------*/
 @media (max-width: 963px) {
-	.header__title{
-		font-size: 35px;
-		margin: 10px;
-	}
-
-	.header__subtitle--small{
-		font-size: 22px;
-	}
-	
-	.header__subtitle--bigger{
-		font-size: 27px;
-	}
-
-	.party-container{
-		font-weight: 500;
-	}
 
 	.card__political-text{
 		margin: 5px;
@@ -254,18 +222,6 @@ body{
 /*-----------------863px---------------------*/
 @media (max-width: 863px) {
 	
-	.header__title{
-		font-size: 30px;
-		margin: 10px;
-	}
-
-	.header__subtitle--small{
-		font-size: 19px;
-	}
-	
-	.header__subtitle--bigger{
-		font-size: 23px;
-	}
 
 	.card__logo {
 		width: 100px;
@@ -279,24 +235,24 @@ body{
 	}
 }
 
-/* -----------------737px--------------------- */
-@media (max-width: 737px) {
-
-	.header{
-		height: 70px;
+/* -----------------753px--------------------- */
+@media (max-width: 753px) {
+	.quest {
+		grid-template-columns: 42%  1fr;
+		grid-template-rows: 1fr;
+		text-align: left;
 	}
 
-	.header__title{
-		font-size: 25px;
-		margin: 10px;
+	.quest__box{
+		grid-column: 1/3;
 	}
 
-	.header__subtitle--small{
-		font-size: 16px;
+	.party-container{
+		grid-template-columns: 1fr;
 	}
-	
-	.header__subtitle--bigger{
-		font-size: 20px;
+
+	.card {
+		grid-column: 1/3;
 	}
 
 	.card__political-text{
